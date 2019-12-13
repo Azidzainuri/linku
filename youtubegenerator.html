@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <title>Youtube Thumbnail Generator - by kompiajaib</title>
-<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/KompiAjaib/ytg/master/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/KompiAjaib/ytg/master/css/style.css">
 </head>
 <body>
 <div id="page_content">
@@ -28,6 +28,46 @@ Credit to <a href="https://www.binarymoon.co.uk/" target="_blank" rel="nofollow"
 </div>
 </div>
 <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js'></script>
-<script type='text/javascript' src='js/ytg-script.js'></script>
+  <script>
+//<![CDATA[
+  $(window).load(function(){
+var thumbnail_list = [
+    'https://i.ytimg.com/vi/[video-id]/maxresdefault.jpg',
+    'https://i.ytimg.com/vi/[video-id]/0.jpg',
+    'https://i.ytimg.com/vi/[video-id]/1.jpg',
+    'https://i.ytimg.com/vi/[video-id]/2.jpg',
+    'https://i.ytimg.com/vi/[video-id]/3.jpg',
+    'https://i.ytimg.com/vi/[video-id]/default.jpg',
+    'https://i.ytimg.com/vi/[video-id]/hqdefault.jpg',
+    'https://i.ytimg.com/vi/[video-id]/mqdefault.jpg',
+    'https://i.ytimg.com/vi/[video-id]/sddefault.jpg'
+];
+    
+var update = function() {
+    if ( update_html ) {
+        var html = '';
+        var video_id = $('#videoID').val();
+        
+        $.each(thumbnail_list, function(){
+            var image_url = this.replace('[video-id]', video_id);
+            html = html + '<div class="image-wrapper"><img src="' + image_url + '" /></div>';
+            html = html + '<div class="caption"><p><strong>Pattern:</strong> ' + this + '</p>';
+            html = html + '<p><strong>This Image:</strong> ' + image_url + '</div>';
+        });
+        
+        $('#thumbnail_container').html( html );
+    }
+    update_html = false; 
+}   
+var update_html = true; 
+$('#videoID').on('change', function(){
+    update_html = true;
+});  
+setInterval( update, 1000 );
+update(); 
+});
+function getThumbs(){var e=document.getElementById("container");e.style.display="block";var e=document.getElementById("get-button");e.style.display="none";};
+//]]>
+</script>
 </body>
 </html>
