@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="21px" viewBox="0 0 20 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>socialProofCheck</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="socialProofCheck" fill-rule="nonzero">
+            <path d="M20,11 C20,16.523 15.523,21 10,21 C9.48255794,21 8.97429436,20.9607001 8.47803155,20.884922 C3.67754625,20.1519 0,16.0055392 0,11 C0,5.4772 4.4772,1 10,1 C15.523,1 20,5.4772 20,11 Z" id="Shape" fill="#0382E5"></path>
+            <path d="M20,10 C20,15.523 15.523,20 10,20 C4.4772,20 0,15.523 0,10 C0,4.4772 4.4772,0 10,0 C15.523,0 20,4.4772 20,10 Z" id="Shape" fill="#008FFF"></path>
+            <polygon id="Shape" fill="#077EDA" points="14 7 8 13 5.5 10.5 3.375 12.6 5.875 15.1 7.875 17.1 8 17.2 16.125 9.1"></polygon>
+            <polygon id="Shape" fill="#ECF0F1" points="14 6 8 12 5.5 9.5 3.375 11.6 5.875 14.1 7.875 16.1 8 16.2 16.125 8.1"></polygon>
+        </g>
+    </g>
+</svg>
